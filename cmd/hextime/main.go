@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./hextime"
 	"fmt"
+	"github.com/mcandre/go-hextime"
 )
 
 func main() {
