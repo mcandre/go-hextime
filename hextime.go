@@ -1,13 +1,13 @@
 package hextime
 
 import (
-	"time"
 	"fmt"
+	"time"
 )
 
 func Hex(t time.Time) string {
 	tUTC := t.UTC()
-	secondsPastMidnight := tUTC.Hour() * 3600 + tUTC.Minute() * 60 + tUTC.Second()
+	secondsPastMidnight := tUTC.Hour()*3600 + tUTC.Minute()*60 + tUTC.Second()
 
 	hexHour := secondsPastMidnight / 4096
 	hexMinute := (secondsPastMidnight % 4096) / 16
