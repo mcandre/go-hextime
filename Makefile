@@ -1,21 +1,9 @@
-# Windows
-ifeq ($(OS),Windows_NT)
-	EXTENSION=.exe
-	RM=cmd /c rmdir /s /q
-else
-	EXTENSION=
-	RM=rm -rf
-endif
-
-BIN=bin/hextime$(EXTENSION)
-
 all: test
 
-test: $(BIN)
-	$(BIN)
+test:
+	hextime
 
-$(BIN): cli.go
-	go build -o $(BIN) cli.go
+gofmt:
+	gofmt -s -w .
 
-clean:
-	-$(RM) bin
+lint: gofmt
