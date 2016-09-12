@@ -17,6 +17,7 @@ e_40_9
 # INSTALL
 
 ```
-$ go get github.com/mcandre/go-hextime
-$ go install github.com/mcandre/go-hextime/cmd/hextime
+$ go get github.com/mcandre/go-hextime/...
 ```
+
+(Yes, include the ellipsis as well, it's the magic Go syntax for downloading, building, and installing all components of a package, including any libraries and command line tools.)
