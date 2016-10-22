@@ -21,3 +21,9 @@ $ go get github.com/mcandre/go-hextime/...
 ```
 
 (Yes, include the ellipsis as well, it's the magic Go syntax for downloading, building, and installing all components of a package, including any libraries and command line tools.)
+
+# COMPILE and INSTALL LOCALLY
+
+```
+$ sh -c 'cd cmd/hextime && go install'
+```
