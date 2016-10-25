@@ -12,9 +12,11 @@ e_40_9
 
 ## Optional
 
-* [make](https://www.gnu.org/software/make/)
+* [Git](https://git-scm.com)
+* [Make](https://www.gnu.org/software/make/)
+* [Bash](https://www.gnu.org/software/bash/)
 
-# INSTALL
+# INSTALL FROM REMOTE GIT REPOSITORY
 
 ```
 $ go get github.com/mcandre/go-hextime/...
@@ -22,10 +24,12 @@ $ go get github.com/mcandre/go-hextime/...
 
 (Yes, include the ellipsis as well, it's the magic Go syntax for downloading, building, and installing all components of a package, including any libraries and command line tools.)
 
-# COMPILE and INSTALL LOCALLY
+# INSTALL FROM LOCAL GIT REPOSITORY
 
 ```
-$ sh -c 'cd cmd/hextime && go install'
+$ mkdir -p $GOPATH/src/github.com/mcandre
+$ git clone git@github.com:mcandre/go-hextime.git $GOPATH/src/github.com/mcandre/go-hextime
+$ sh -c "cd $GOPATH/src/github.com/mcandre/go-hextime/cmd/hextime && go install"
 ```
 
 # LINT
