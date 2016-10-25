@@ -27,3 +27,11 @@ $ go get github.com/mcandre/go-hextime/...
 ```
 $ sh -c 'cd cmd/hextime && go install'
 ```
+
+# LINT
+
+Keep the code tidy:
+
+```
+$ make lint
+```
