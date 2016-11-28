@@ -33,6 +33,14 @@ $ git clone git@github.com:mcandre/go-hextime.git $GOPATH/src/github.com/mcandre
 $ sh -c "cd $GOPATH/src/github.com/mcandre/go-hextime/cmd/hextime && go install"
 ```
 
+# BUILD AND ARCHIVE PORTS
+
+```
+$ make port
+...
+Archived ports in bin/hextime-0.0.1.zip
+```
+
 # LINT
 
 Keep the code tidy:
