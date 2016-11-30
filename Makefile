@@ -19,7 +19,7 @@ goimport:
 lint: govet gofmt goimport
 
 port:
-	sh port.sh hextime $(VERSION) bin cmd
+	goport -a hextime -l $(VERSION)
 
 clean: clean-ports
 
