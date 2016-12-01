@@ -18,8 +18,13 @@ goimport:
 
 lint: govet gofmt goimport
 
-port:
-	goport -a hextime -l $(VERSION)
+port: archive-ports
+
+archive-ports: bin
+	zipc -C bin "hextime-$(VERSION).zip" "hextime-$(VERSION)"
+
+bin:
+	gox --output="bin/{{.Dir}}-$(VERSION)/{{.OS}}/{{.Arch}}/{{.Dir}}" ./cmd/...
 
 clean: clean-ports
 
