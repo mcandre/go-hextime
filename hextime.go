@@ -1,3 +1,4 @@
+// Package hextime provides conversion functions for formatting time in hexadecimal.
 package hextime
 
 import (
@@ -5,6 +6,7 @@ import (
 	"time"
 )
 
+// Hex formats the given time into a hexadecimal notation.
 func Hex(t time.Time) string {
 	tUTC := t.UTC()
 	secondsPastMidnight := tUTC.Hour()*3600 + tUTC.Minute()*60 + tUTC.Second()
@@ -16,6 +18,7 @@ func Hex(t time.Time) string {
 	return fmt.Sprintf("%x_%02x_%x", hexHour, hexMinute, hexSecond)
 }
 
+// Hextime formats the current time into a hexadecimal notation.
 func Hextime() string {
 	return Hex(time.Now())
 }
