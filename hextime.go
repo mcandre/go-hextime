@@ -6,6 +6,9 @@ import (
 	"time"
 )
 
+// Version is semver.
+var Version = "0.0.1"
+
 // Hex formats the given time into a hexadecimal notation.
 func Hex(t time.Time) string {
 	tUTC := t.UTC()
