@@ -45,6 +45,7 @@ $ go get github.com/mcandre/go-hextime/...
 $ mkdir -p $GOPATH/src/github.com/mcandre
 $ git clone https://github.com/mcandre/go-hextime.git $GOPATH/src/github.com/mcandre/go-hextime
 $ cd "$GOPATH/src/github.com/mcandre/go-hextime"
+$ git submodule update --init --recursive
 $ go install ./...
 ```
 
