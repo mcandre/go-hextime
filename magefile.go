@@ -88,7 +88,7 @@ func Goxcart() error {
 		"-repo",
 		repoNamespace,
 		"-banner",
-		hextime.Version,
+		portBasename,
 	)
 }
 
